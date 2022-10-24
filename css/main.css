@@ -1,0 +1,56 @@
+body{
+/*background-color: #00008B;
+background-image: url('https://st.depositphotos.com/1679906/3102/v/600/depositphotos_31021737-stock-illustration-abstract-vector-background-for-use.jpg');
+background-repeat: no-repeat;
+background-position: center;*/
+background: #00FF00 url('https://st.depositphotos.com/1679906/3102/v/600/depositphotos_31021737-stock-illustration-abstract-vector-background-for-use.jpg') no-repeat center top;
+height: 100vh;
+background-size: cover;
+}
+p.text:not(:empty) {
+color: orange;
+}
+p.text:not(:empty)::after {
+content: attr(title);
+}
+p.main_link::first-letter{
+  color: blue;
+  text-decoration: line-through;
+}
+
+#some_id::after {
+  content: '123';
+  color: red;
+  text-decoration: underline;
+}
+.main_text {
+  color: red;
+}
+.hot {
+  color: blue;
+}
+#text-in-p {
+  color: green;
+}
+div b, div i {
+  color: orange;
+}
+.main_link {
+  color: red;
+  text-decoration: none;
+}
+.main_link:hover {
+  color: blue;
+  text-decoration: underline;
+  text-decoration-color: red;
+  cursor: pointer;
+}
+.main_link:active {
+  text-decoration: line-through;
+}
+.main_link:visited {
+  color: grey;
+}
+input:required
+input {color:blue}
+input:focus {color:red}
